@@ -2,31 +2,26 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css"/>
-<![endif]-->
-<!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
     <link rel="stylesheet" href="formstyle.css"/>
-<!--<![endif]-->
     <meta charset='utf-8'>
     <meta content='IE=edge' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
   </head>
+  
   <body>
     <!-- Contact Form - sent to a Google Sheet -->
     <form id='foo' method='post' action='https://script.google.com/macros/s/AKfycbzUPhNLHr-GXoL7U2joZb5AnBp5cWYQIW3hT5kPM8lX3P7rbDc/exec'>
       <p>
-        <label for="fname">Your Name</label>
+        <label for="fname">Your Name</label><br>
     <input type="text" id="name" name="name" placeholder="Your name..">
 
-    <label for="lname">Email address</label>
+    <label for="lname">Email address</label><br>
     <input type="text" id="email" name="email" placeholder="Your Email address..">
 
-    <label for="lname">Mobile Number</label>
+    <label for="lname">Mobile Number</label><br>
     <input type="text" id="phone" name="phone" placeholder="Your mobile number..">
 
-    <label for="subject">Message</label>
+    <label for="subject">Message</label><br>
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Send Message">
