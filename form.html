@@ -2,7 +2,12 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+function Confirm(form){
+alert("Record insert successfully!"); 
+form.submit();
+}
+</script>
     <link rel="stylesheet" href="formstyle.css"/>
     <meta charset='utf-8'>
     <meta content='IE=edge' http-equiv='X-UA-Compatible'>
@@ -25,9 +30,14 @@
     <label for="subject">Message:</label><br>
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea><br>
 
-    <input type="submit" value="Send Message" onSubmit="alert('Thank you for your feedback.');" >
+    <input type="submit" value="Send Message" onClick="Confirm(this.form)">
 
     </form>
-    
+    <script type="text/javascript">
+function Confirm(form){
+alert("Record insert successfully!"); 
+form.submit();
+}
+</script>
   </body>
 </html>
