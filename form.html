@@ -24,11 +24,17 @@
     <label for="subject">Message:</label><br>
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea><br>
 
-    <input type="submit" value="Send Message"><div style="display:none;" id="thankyou-message">
-      <em>Thanks </em> for contacting us!We will get back to you soon</div>
+    <input type="submit" value="Send Message" onclick="formSubmitter('sampleform', 'message')"><div id='message'></div>
 
     </form>
-    
+    <script language="JavaScript">
+<!--
+function formSubmitter(formTag, messageTag){
+  document.getElementById(messageTag).innerHTML = "The form has been updated.";
+  document.forms[formTag].submit();
+}
+// -->
+</script>
     <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
     
