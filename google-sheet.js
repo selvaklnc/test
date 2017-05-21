@@ -2,7 +2,7 @@
 var request;
 
 // Bind to the submit event of our form
-$("#foo").submit(function(event){
+$("#gform").submit(function(event){
 
     // Abort any pending request
     if (request) {
